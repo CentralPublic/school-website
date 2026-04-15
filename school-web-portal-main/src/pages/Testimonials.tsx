@@ -10,48 +10,49 @@ import {
 import { Star, Quote } from "lucide-react";
 
 const testimonials = [
+  
   {
-    id: 1,
-    name: "Priya Sharma",
-    role: "Parent of Class 10 Student",
-    rating: 5,
-    text: "Springfield Academy has been instrumental in shaping my daughter's personality. The teachers are incredibly dedicated, and the holistic approach to education is exactly what we were looking for. The school has helped her excel not just academically but also in extracurricular activities.",
-  },
-  {
-    id: 2,
-    name: "Rajesh Kumar",
-    role: "Alumni (Batch 2018)",
-    rating: 5,
-    text: "My years at Springfield Academy were the most formative years of my life. The values instilled in me here continue to guide my professional journey. The teachers didn't just teach subjects; they taught us how to think, question, and grow as individuals.",
-  },
-  {
-    id: 3,
-    name: "Dr. Anjali Mehta",
-    role: "Parent of Class 8 Student",
-    rating: 5,
-    text: "As a doctor, I understand the importance of a stress-free learning environment. Springfield provides exactly that. My son looks forward to school every day, which speaks volumes about the positive atmosphere. The school's focus on mental health and well-being is commendable.",
-  },
-  {
-    id: 4,
-    name: "Vikram Singh",
-    role: "Alumni (Batch 2015)",
-    rating: 5,
-    text: "The foundation Springfield gave me helped me secure admission to IIT. But more than academics, the school taught me discipline, time management, and the importance of giving back to society. I'm forever grateful for the opportunities and guidance I received here.",
-  },
-  {
-    id: 5,
-    name: "Sunita Agarwal",
-    role: "Parent of Class 5 & 8 Students",
-    rating: 5,
-    text: "Both my children study here, and I've seen tremendous growth in their confidence and communication skills. The school's emphasis on both traditional values and modern education creates well-rounded individuals. The teachers know each child personally.",
-  },
-  {
-    id: 6,
-    name: "Arjun Reddy",
-    role: "Alumni (Batch 2020)",
-    rating: 5,
-    text: "Springfield Academy prepared me not just for college but for life. The sports facilities and encouragement for athletics helped me become a state-level swimmer. The balance between studies and sports here is perfect for any aspiring athlete.",
-  },
+  id: 1,
+  name: "Ayesha Khan",
+  role: "Parent of Class 10 Student",
+  rating: 5,
+  text: "Central Public English High School has been instrumental in shaping my daughter's personality. The teachers are incredibly dedicated, and the holistic approach to education is exactly what we were looking for. The school has helped her excel not just academically but also in extracurricular activities.",
+},
+{
+  id: 2,
+  name: "Mohammed Rahman",
+  role: "Alumni (Batch 2018)",
+  rating: 5,
+  text: "My years at Central Public English High School were the most formative years of my life. The values instilled in me here continue to guide my professional journey. The teachers didn't just teach subjects; they taught us how to think, question, and grow as individuals.",
+},
+{
+  id: 3,
+  name: "Dr. Sana Ahmed",
+  role: "Parent of Class 8 Student",
+  rating: 5,
+  text: "As a doctor, I understand the importance of a stress-free learning environment. Central Public English High School provides exactly that. My son looks forward to school every day, which speaks volumes about the positive atmosphere. The school's focus on mental health and well-being is commendable.",
+},
+{
+  id: 4,
+  name: "Imran Sheikh",
+  role: "Alumni (Batch 2015)",
+  rating: 5,
+  text: "The foundation Central Public English High School gave me helped me secure admission to IIT. But more than academics, the school taught me discipline, time management, and the importance of giving back to society. I'm forever grateful for the opportunities and guidance I received here.",
+},
+{
+  id: 5,
+  name: "Farah Siddiqui",
+  role: "Parent of Class 5 & 8 Students",
+  rating: 5,
+  text: "Both my children study here, and I've seen tremendous growth in their confidence and communication skills. The school's emphasis on both traditional values and modern education creates well-rounded individuals. The teachers know each child personally.",
+},
+{
+  id: 6,
+  name: "Armaan Khan",
+  role: "Alumni (Batch 2020)",
+  rating: 5,
+  text: "Central Public English High School prepared me not just for college but for life. The sports facilities and encouragement for athletics helped me become a state-level swimmer. The balance between studies and sports here is perfect for any aspiring athlete.",
+}
 ];
 
 const Testimonials = () => {
@@ -67,7 +68,7 @@ const Testimonials = () => {
             <span className="text-primary">Testimonials</span>
           </h1>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto animate-fade-in" style={{ animationDelay: "0.2s" }}>
-            Hear from our parents, alumni, and community members about their experiences with Springfield Academy.
+            Hear from our parents, alumni, and community members about their experiences with Central Public English High School & Junior College
           </p>
         </div>
       </section>
@@ -142,7 +143,7 @@ const Testimonials = () => {
               <div className="text-primary-foreground/80">Parent Satisfaction</div>
             </div>
             <div className="animate-fade-in" style={{ animationDelay: "0.1s" }}>
-              <div className="text-4xl md:text-5xl font-bold text-secondary mb-2">5000+</div>
+              <div className="text-4xl md:text-5xl font-bold text-secondary mb-2">1000+</div>
               <div className="text-primary-foreground/80">Happy Alumni</div>
             </div>
             <div className="animate-fade-in" style={{ animationDelay: "0.2s" }}>
@@ -150,7 +151,7 @@ const Testimonials = () => {
               <div className="text-primary-foreground/80">Average Rating</div>
             </div>
             <div className="animate-fade-in" style={{ animationDelay: "0.3s" }}>
-              <div className="text-4xl md:text-5xl font-bold text-secondary mb-2">35+</div>
+              <div className="text-4xl md:text-5xl font-bold text-secondary mb-2">21+</div>
               <div className="text-primary-foreground/80">Years of Trust</div>
             </div>
           </div>

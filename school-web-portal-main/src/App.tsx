@@ -6,7 +6,6 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Navbar } from "@/components/layout/Navbar";
 import { Layout } from "@/components/layout/Layout";
-import { WhatsAppButton } from "@/components/layout/WhatsAppButton";
 import { ContactDialog } from "@/components/ContactDialog";
 import { FAQChatbot } from "@/components/FAQChatbot";
 import { ScrollToTop } from "@/components/ScrollToTop";
@@ -47,7 +46,6 @@ const AppContent = () => {
           </Route>
         </Routes>
       </Suspense>
-      <WhatsAppButton />
       <FAQChatbot />
       <ContactDialog open={isContactOpen} onOpenChange={setIsContactOpen} />
     </div>

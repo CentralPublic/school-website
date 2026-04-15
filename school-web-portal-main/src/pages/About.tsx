@@ -2,6 +2,7 @@ import { SectionHeading } from "@/components/SectionHeading";
 import { Card, CardContent } from "@/components/ui/card";
 import { AnimatedCounter } from "@/components/AnimatedCounter";
 import { Target, Eye, Heart, Award, Users, Clock } from "lucide-react";
+import principalImg from "@/exhibition_images/e5.jpeg";
 
 const values = [
   {
@@ -27,11 +28,15 @@ const values = [
 ];
 
 const milestones = [
-  { year: "2005", title: "Foundation", description: "Springfield Academy was established with 50 students." },
-  { year: "2010", title: "CBSE Affiliation", description: "Received official CBSE affiliation and recognition." },
-  { year: "2015", title: "Campus Expansion", description: "Expanded to a 25-acre modern campus with new facilities." },
-  { year: "2020", title: "Smart Classrooms", description: "Introduced digital learning with smart classrooms." },
-  { year: "2025", title: "AI Lab Launch", description: "Launched state-of-the-art Robotics and AI laboratory." },
+  { year: "2005", title: "Foundation", description: "Central Public English High School was established with 60 students." },
+  { year: "2009", title: "State Board Affiliation", description: "Received official state board affiliation and recognition." },
+  { year: "2012", title: "Campus Expansion", description: "Expanded to a more classrooms, labs modern, campus with new facilities." },
+  { year: "2015", title: "Smart Classrooms", description: "Introduced digital learning with smart classrooms." },
+  { year: "2016", title: "Introduced to Junior College", description: "Junior College with Arts, Commerce" },
+  { year: "2020", title: "Introduced to Science Stream", description: "Junior College with Science Stream" },
+  { year: "2023", title: "Introduced to Information Technology", description: "IT labs" },
+
+
 ];
 
 const About = () => {
@@ -50,7 +55,7 @@ const About = () => {
                 <span className="text-primary"> Building Futures</span>
               </h1>
               <p className="text-muted-foreground text-lg mb-6 leading-relaxed">
-                For over 35 years, Springfield Academy has been at the forefront of education,
+                For over 21 years, Central Public English High School has been at the forefront of education,
                 combining traditional values with modern teaching methodologies. Our commitment
                 to excellence has helped shape thousands of successful individuals.
               </p>
@@ -63,14 +68,14 @@ const About = () => {
               <div className="bg-primary rounded-2xl p-6 text-primary-foreground">
                 <Clock className="w-10 h-10 mb-4 text-secondary" />
                 <div className="text-3xl font-bold">
-                  <AnimatedCounter end={35} suffix="+" duration={2000} />
+                  <AnimatedCounter end={21} suffix="+" duration={2000} />
                 </div>
                 <div className="text-primary-foreground/80">Years of Excellence</div>
               </div>
               <div className="bg-secondary rounded-2xl p-6 text-secondary-foreground mt-8">
                 <Users className="w-10 h-10 mb-4" />
                 <div className="text-3xl font-bold">
-                  <AnimatedCounter end={5000} suffix="+" duration={2000} />
+                  <AnimatedCounter end={1000} suffix="+" duration={2000} />
                 </div>
                 <div className="text-secondary-foreground/80">Proud Alumni</div>
               </div>
@@ -84,7 +89,7 @@ const About = () => {
               <div className="bg-background rounded-2xl p-6 text-foreground mt-8">
                 <Target className="w-10 h-10 mb-4 text-primary" />
                 <div className="text-3xl font-bold">
-                  <AnimatedCounter end={50} suffix="+" duration={2000} />
+                  <AnimatedCounter end={40} suffix="+" duration={2000} />
                 </div>
                 <div className="text-muted-foreground">Expert Teachers</div>
               </div>
@@ -167,7 +172,7 @@ const About = () => {
         <div className="container mx-auto px-4">
           <SectionHeading
             title="Our Journey"
-            subtitle="Key milestones in our 35+ years of educational excellence."
+            subtitle="Key milestones in our 21+ years of educational excellence."
           />
           <div className="max-w-3xl mx-auto">
             {milestones.map((milestone, index) => (
@@ -198,40 +203,74 @@ const About = () => {
         </div>
       </section>
 
-      {/* Principal & Vice Principal */}
-      <section className="py-16 md:py-24 bg-primary text-primary-foreground">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-10 animate-fade-in">
-            <h2 className="text-2xl md:text-3xl font-bold">School Leadership</h2>
-            <p className="text-primary-foreground/70 mt-2 text-sm">Guiding our institution with vision and dedication</p>
-          </div>
-          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            {/* Principal */}
-            <div className="bg-primary-foreground/10 rounded-2xl p-8 text-center animate-fade-in border border-primary-foreground/20 hover:bg-primary-foreground/15 transition-colors duration-300">
-              <div className="w-24 h-24 bg-secondary rounded-full mx-auto mb-4 flex items-center justify-center">
-                <span className="text-2xl font-bold text-secondary-foreground">F</span>
-              </div>
-              <h3 className="text-xl font-bold text-primary-foreground mb-1">Mrs. Farhana</h3>
-              <p className="text-secondary text-sm font-semibold uppercase tracking-wider mb-4">Principal</p>
-              <p className="text-primary-foreground/80 text-sm leading-relaxed">
-                With over 25 years of experience in education, Mr. Farooq leads the school with a vision of academic excellence and holistic student development. His leadership has transformed the institution into a center of learning and innovation.
-              </p>
-            </div>
+  {/* Principal & Vice Principal */}
+<section className="py-16 md:py-24 bg-primary text-primary-foreground">
+  <div className="container mx-auto px-4">
+    <div className="text-center mb-10 animate-fade-in">
+      <h2 className="text-2xl md:text-3xl font-bold">School Leadership</h2>
+      <p className="text-primary-foreground/70 mt-2 text-sm">
+        Guiding our institution with vision and dedication
+      </p>
+    </div>
 
-            {/* Vice Principal */}
-            <div className="bg-primary-foreground/10 rounded-2xl p-8 text-center animate-fade-in border border-primary-foreground/20 hover:bg-primary-foreground/15 transition-colors duration-300" style={{ animationDelay: "0.15s" }}>
-              <div className="w-24 h-24 bg-secondary rounded-full mx-auto mb-4 flex items-center justify-center">
-                <span className="text-2xl font-bold text-secondary-foreground">LA</span>
-              </div>
-              <h3 className="text-xl font-bold text-primary-foreground mb-1">Mrs. Lubna Khot</h3>
-              <p className="text-secondary text-sm font-semibold uppercase tracking-wider mb-4">Vice Principal</p>
-              <p className="text-primary-foreground/80 text-sm leading-relaxed">
-                Mrs. Anjum brings 18 years of dedicated teaching and administrative experience. She oversees academic planning, student welfare, and staff coordination, ensuring the school maintains its high standards of education and discipline.
-              </p>
-            </div>
-          </div>
+    {/* ONLY CHANGE: grid-cols-2 → grid-cols-3 */}
+    <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+
+      {/* Principal */}
+      <div className="bg-primary-foreground/10 rounded-2xl p-8 text-center animate-fade-in border border-primary-foreground/20 hover:bg-primary-foreground/15 transition-colors duration-300">
+        
+        <img
+          src={principalImg}
+          alt="Principal"
+          className="w-24 h-24 rounded-full mx-auto mb-4 object-cover border-4 border-secondary"
+        />
+
+        <h3 className="text-xl font-bold text-primary-foreground mb-1">
+          Mrs. Farhana Dilshad Shaikh
+        </h3>
+        <p className="text-secondary text-sm font-semibold uppercase tracking-wider mb-4">
+          Principal
+        </p>
+        <p className="text-primary-foreground/80 text-sm leading-relaxed">
+          With over 21 years of experience in education, Mrs. Farhana Dilshad Shaikh leads the school with a vision of academic excellence and holistic student development. Her leadership has transformed the institution into a center of learning and innovation.
+        </p>
+      </div>
+
+      {/* Vice Principal (UNCHANGED) */}
+      <div className="bg-primary-foreground/10 rounded-2xl p-8 text-center animate-fade-in border border-primary-foreground/20 hover:bg-primary-foreground/15 transition-colors duration-300" style={{ animationDelay: "0.15s" }}>
+        <div className="w-24 h-24 bg-secondary rounded-full mx-auto mb-4 flex items-center justify-center">
+          <span className="text-2xl font-bold text-secondary-foreground">LA</span>
         </div>
-      </section>
+        <h3 className="text-xl font-bold text-primary-foreground mb-1">
+          Mrs. Lubna Khot
+        </h3>
+        <p className="text-secondary text-sm font-semibold uppercase tracking-wider mb-4">
+          Vice Principal
+        </p>
+        <p className="text-primary-foreground/80 text-sm leading-relaxed">
+          Mrs. Lubna brings 21 years of dedicated teaching and administrative experience. She oversees academic planning, student welfare, and staff coordination, ensuring the school maintains its high standards of education and discipline.
+        </p>
+      </div>
+
+      {/* NEW Supervisor (same design, nothing else touched) */}
+      <div className="bg-primary-foreground/10 rounded-2xl p-8 text-center animate-fade-in border border-primary-foreground/20 hover:bg-primary-foreground/15 transition-colors duration-300" style={{ animationDelay: "0.3s" }}>
+        <div className="w-24 h-24 bg-secondary rounded-full mx-auto mb-4 flex items-center justify-center">
+          <span className="text-2xl font-bold text-secondary-foreground">S</span>
+        </div>
+        <h3 className="text-xl font-bold text-primary-foreground mb-1">
+          Mrs. Sadaf Ansari
+        </h3>
+        <p className="text-secondary text-sm font-semibold uppercase tracking-wider mb-4">
+          Supervisor
+        </p>
+        <p className="text-primary-foreground/80 text-sm leading-relaxed">
+          The supervisor ensures smooth daily operations, discipline, and coordination within the school environment, supporting both students and staff effectively.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
     </div>
   );
 };

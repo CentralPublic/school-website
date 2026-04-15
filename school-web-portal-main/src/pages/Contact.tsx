@@ -13,25 +13,25 @@ const contactInfo = [
   {
     icon: MapPin,
     title: "Address",
-    content: "123 Education Street, Springfield, State 12345",
-    link: "https://maps.google.com",
+    content: "Central public english high school and junior college, kismat colony road kausa, mumbra, Dist.Thane",
+    link: "https://maps.app.goo.gl/cj8smMHKSxG6L8439",
   },
   {
     icon: Phone,
     title: "Phone",
-    content: "+1 (234) 567-890",
-    link: "tel:+1234567890",
+    content: "+91 9324604661",
+    link: "tel:+91 9324604661",
   },
   {
     icon: Mail,
     title: "Email",
-    content: "info@springfield.edu",
-    link: "mailto:info@springfield.edu",
+    content: "centralpublicpri27211402315@gmail.com",
+    link: "mailto:centralpublicpri27211402315@gmail.com",
   },
   {
     icon: Clock,
     title: "Office Hours",
-    content: "Mon-Fri: 8AM-4PM, Sat: 8AM-12PM",
+    content: "Mon-Fri: 7AM-6PM, Sat: 7AM-2PM",
     link: null,
   },
 ];
@@ -117,7 +117,7 @@ const Contact = () => {
                         Get instant responses to your queries
                       </p>
                       <a
-                        href={`https://wa.me/1234567890?text=${encodeURIComponent("Hello! I'm interested in learning more about Springfield Academy.")}`}
+                        href={`https://wa.me/9324604661?text=${encodeURIComponent("Hello! I'm interested in learning more about Central Public English High School.")}`}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="inline-flex items-center gap-2 bg-white text-[hsl(142,70%,45%)] px-4 py-2 rounded-lg font-semibold text-sm hover:bg-white/90 transition-colors"
@@ -146,14 +146,15 @@ const Contact = () => {
               <div className="text-center p-8">
                 <MapPin className="w-16 h-16 text-primary mx-auto mb-4" />
                 <h3 className="text-xl font-semibold text-foreground mb-2">
-                  Springfield Academy Campus
+                  Central Public English High School
                 </h3>
                 <p className="text-muted-foreground mb-4">
-                  123 Education Street, Springfield, State 12345
+                  Central public english high school and junior college, kismat colony road kausa, mumbra, Dist.Thane
+
                 </p>
                 <Button asChild>
                   <a
-                    href="https://maps.google.com"
+                    href="https://maps.app.goo.gl/cj8smMHKSxG6L8439"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -166,24 +167,7 @@ const Contact = () => {
         </div>
       </section>
 
-      {/* FAQ Preview */}
-      <section className="py-16 md:py-24 bg-primary text-primary-foreground">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-2xl md:text-4xl font-bold mb-4 animate-fade-in">
-            Have Questions?
-          </h2>
-          <p className="text-primary-foreground/80 text-lg max-w-2xl mx-auto mb-8 animate-fade-in" style={{ animationDelay: "0.1s" }}>
-            Schedule a campus visit to meet our faculty, explore our facilities, and learn more about what makes Springfield Academy special.
-          </p>
-          <Button
-            size="lg"
-            className="bg-secondary hover:bg-secondary/90 text-secondary-foreground font-semibold animate-fade-in"
-            style={{ animationDelay: "0.2s" }}
-          >
-            Schedule a Visit
-          </Button>
-        </div>
-      </section>
+  
     </div>
   );
 };

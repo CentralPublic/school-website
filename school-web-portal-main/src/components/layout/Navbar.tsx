@@ -28,7 +28,7 @@ export const Navbar = () => {
             </div>
             <div className="flex flex-col">
               <span className="text-lg md:text-xl font-bold text-foreground leading-none">
-                Central Public
+                Central Public English
               </span>
               <span className="text-xs md:text-sm font-medium text-muted-foreground">
                 High School
@@ -57,7 +57,7 @@ export const Navbar = () => {
           {/* Call Button & Mobile Menu Toggle */}
           <div className="flex items-center gap-3">
             <a
-              href="tel:+911234567890"
+              href="tel:+91 9324604661"
               className="hidden sm:inline-flex items-center gap-2 bg-gradient-to-r from-sky-500 to-sky-600 hover:from-sky-600 hover:to-sky-700 text-white font-bold rounded-full px-6 py-2.5 shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-0.5"
             >
               <PhoneCall className="w-4 h-4" />

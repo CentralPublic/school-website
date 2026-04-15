@@ -8,24 +8,21 @@ import { cn } from "@/lib/utils";
 const faqData = [
     {
         question: "How do I enroll my child?",
-        answer: "To enroll your child for the upcoming school year, please visit our admissions office. You will need: Original and copies of the birth certificate, home address proof, and previous school records."
+        answer: "To enroll your child for the upcoming school year, please visit our admissions office. You will need: Original and copies of the birth/leaving certificate, Aadhar address proof of student and parent, and previous school records."
     },
     {
         question: "What are the school hours?",
-        answer: "Our standard school day runs from 7:00 AM to 5:30 PM. Primary: 7:00 AM to 12:00 PM. Pre-primary: 12:30 PM to 5:30 PM."
+        answer: "Our standard school day runs from 7:00 AM to 6:00 PM. Primary: 12:30 AM to 5:40 PM. Pre-primary: 12:30 PM to 4:30 PM."
     },
     {
         question: "How do I report an absence?",
-        answer: "Please call the school office or email attendance@school.edu before 8:30 AM on the day of absence."
+        answer: "Please call the school office or email centralpublicpri27211402315@gmail.com after 7:00 AM on the day of absence."
     },
     {
         question: "How can I find my child's bus route?",
-        answer: "Bus routes and estimated pickup/drop-off times are updated annually in August. You can view them on the parent portal or contact the transport coordinator."
+        answer: "Bus routes and estimated pickup/drop-off times are updated annually in June. You can contact the admin office."
     },
-    {
-        question: "What is the medication policy?",
-        answer: "For safety, all medications (including over-the-counter) must be stored in the school clinic. Parents must complete a medication authorization form."
-    }
+    
 ];
 
 export const FAQChatbot = () => {

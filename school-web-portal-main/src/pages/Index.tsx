@@ -56,27 +56,27 @@ const HERO_LOGO = hero_logo;
 
 
 const recentEvents = [
-  { src: r1, desc: "Annual Science Fair 2024" },
-  { src: r2, desc: "Cultural Day Celebrations" },
-  { src: r3, desc: "Inter-School Debate Competition" },
-  { src: r4, desc: "Community Service Drive" },
-  { src: r5, desc: "Mathematics Olympiad Winners" },
+  { src: r1, desc: "Prize Distribution" },
+  { src: r2, desc: "Sports Activity" },
+  { src: r3, desc: "No to Tobacco Initiative " },
+  { src: r4, desc: "Republic Day Activity" },
+  { src: r5, desc: "Black Commanders" },
 ];
 
 const sportsEvents = [
   { src: s1, desc: "Annual Sports Meet Finals" },
-  { src: s2, desc: "Basketball Championship" },
-  { src: s3, desc: "Football League Match" },
-  { src: s4, desc: "Tennis Tournament" },
-  { src: s5, desc: "Swimming Gala 2024" },
+  { src: s2, desc: "Ring Ball" },
+  { src: s3, desc: "Sports Team" },
+  { src: s4, desc: "Football League Match" },
+  { src: s5, desc: "Ring Ball" },
 ];
 
 const exhibitionEvents = [
-  { src: e1, desc: "Art & Craft Exhibition" },
-  { src: e2, desc: "Robotics Showcase" },
-  { src: e3, desc: "Environmental Projects" },
-  { src: e4, desc: "Literature & Poetry Corner" },
-  { src: e5, desc: "History & Heritage Display" },
+  { src: e1, desc: "Science Exhibition" },
+  { src: e2, desc: "pre-primary prize distribution" },
+  { src: e3, desc: "Cultural Event" },
+  { src: e4, desc: "Arts Exhibition" },
+  { src: e5, desc: "Science Exhibition" },
 ];
 interface IndexProps {
   onApplyClick?: () => void;
@@ -111,8 +111,8 @@ const Index = ({ onApplyClick }: IndexProps) => {
                 className="text-4xl sm:text-5xl md:text-5xl lg:text-5xl xl:text-6xl font-bold mb-3 sm:mb-4 md:mb-5 text-foreground drop-shadow-none animate-fade-in leading-[1.1]"
                 style={{ fontFamily: "'Caveat Brush', cursive", WebkitTextStroke: "1.5px currentColor" }}
               >
-                <span className="block whitespace-nowrap">Central Public School</span>
-                <span className="block drop-shadow-none mt-0.5 sm:mt-1" style={{ color: "#1d4ed8" }}>Junior College</span>
+                <span className="block whitespace-nowrap">Central Public English<br></br> High School</span> 
+                <span className="block drop-shadow-none mt-0.5 sm:mt-1" style={{ color: "#1d4ed8" }}>Junior College of Arts, Commerce(IT) & Science(IT)</span>
               </h1>
 
               <p className="text-xs sm:text-sm md:text-base text-foreground/75 mb-3 sm:mb-4 md:mb-5 animate-fade-in leading-relaxed" style={{ animationDelay: "0.15s" }}>
@@ -153,10 +153,10 @@ const Index = ({ onApplyClick }: IndexProps) => {
                 About Us
               </div>
               <h2 className="text-3xl md:text-4xl font-bold text-foreground">
-                A Legacy of <span className="text-primary">Excellence</span> Since 1989
+                A Legacy of <span className="text-primary">Excellence</span> Since 2005
               </h2>
               <p className="text-muted-foreground leading-relaxed">
-                Springfield Academy stands as a beacon of educational excellence, where tradition meets innovation. Our holistic approach nurtures not just academic brilliance but also character, creativity, and compassion.
+                Central public english high school and junior college stand as a beacon of educational excellence, where tradition meets innovation. Our holistic approach nurtures not just academic brilliance but also character, creativity, and compassion.
               </p>
               <div className="grid grid-cols-2 gap-4 pt-4">
                 {[
@@ -185,7 +185,7 @@ const Index = ({ onApplyClick }: IndexProps) => {
                 />
               </div>
               <div className="absolute -bottom-6 -left-6 bg-secondary text-secondary-foreground p-5 rounded-xl shadow-lg">
-                <div className="text-3xl font-bold">35+</div>
+                <div className="text-3xl font-bold">21+</div>
                 <div className="text-sm">Years Strong</div>
               </div>
             </div>
@@ -210,7 +210,7 @@ const Index = ({ onApplyClick }: IndexProps) => {
               {
                 icon: GraduationCap,
                 title: "Academics",
-                desc: "Rigorous CBSE curriculum with focus on conceptual learning",
+                desc: "Rigorous Maharashtra State Board curriculum with focus on conceptual learning",
                 color: "bg-blue-500"
               },
               {
@@ -222,7 +222,7 @@ const Index = ({ onApplyClick }: IndexProps) => {
               {
                 icon: Star,
                 title: "Arts",
-                desc: "Music, dance, drama and visual arts programs",
+                desc: "Drama and visual arts programs",
                 color: "bg-purple-500"
               },
               {
@@ -254,10 +254,10 @@ const Index = ({ onApplyClick }: IndexProps) => {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {[
-              { value: 35, suffix: "+", label: "Years of Excellence" },
-              { value: 5000, suffix: "+", label: "Proud Alumni" },
+              { value: 21, suffix: "+", label: "Years of Excellence" },
+              { value: 1000, suffix: "+", label: "Proud Alumni" },
               { value: 98, suffix: "%", label: "Success Rate" },
-              { value: 50, suffix: "+", label: "Expert Teachers" },
+              { value: 40, suffix: "+", label: "Expert Teachers" },
             ].map((stat, i) => (
               <div
                 key={i}
@@ -404,7 +404,7 @@ const Index = ({ onApplyClick }: IndexProps) => {
             Begin Your Journey With Us
           </h2>
           <p className="text-secondary-foreground/80 mb-8 max-w-lg mx-auto">
-            Admissions are open for 2024-25. Join our family of achievers and dreamers.
+            Admissions are open for 2026-27. Join our family of achievers and dreamers.
           </p>
 
         </div>
