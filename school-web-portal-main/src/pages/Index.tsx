@@ -107,12 +107,12 @@ const Index = ({ onApplyClick }: IndexProps) => {
             {/* Left Column - Content */}
             <div className="w-full sm:w-1/2 md:w-1/2 flex flex-col items-start text-left sm:items-center sm:text-center pl-6 sm:pl-10 md:pl-16 lg:pl-20 pr-6 sm:pr-8 md:pr-10 lg:pr-16 relative z-20">
               {/* School Name */}
-              <h1
-                className="text-4xl sm:text-5xl md:text-5xl lg:text-5xl xl:text-6xl font-bold mb-3 sm:mb-4 md:mb-5 text-foreground drop-shadow-none animate-fade-in leading-[1.1]"
-                style={{ fontFamily: "'Caveat Brush', cursive", WebkitTextStroke: "1.5px currentColor" }}
-              >
-                <span className="block whitespace-nowrap">Central Public English<br></br> High School</span> 
-                <span className="block drop-shadow-none mt-0.5 sm:mt-1" style={{ color: "#1d4ed8" }}>Junior College of Arts, Commerce(IT) & Science(IT)</span>
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold mb-3 sm:mb-4 md:mb-5 tracking-tight text-foreground animate-fade-in leading-[1.15]">
+                <span className="block text-foreground">Central Public English</span>
+                <span className="block text-primary">High School</span>
+                <span className="block text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-primary mt-2 sm:mt-3">
+                  Junior College of Arts, Commerce(IT) &amp; Science(IT)
+                </span>
               </h1>
 
               <p className="text-xs sm:text-sm md:text-base text-foreground/75 mb-3 sm:mb-4 md:mb-5 animate-fade-in leading-relaxed" style={{ animationDelay: "0.15s" }}>
@@ -128,7 +128,7 @@ const Index = ({ onApplyClick }: IndexProps) => {
                 <Link to="/about">
                   <Button
                     size="sm"
-                    className="bg-blue-700 hover:bg-blue-800 text-white font-semibold px-4 sm:px-6 py-4 sm:py-5 md:px-8 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 text-xs sm:text-sm group"
+                    className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-4 sm:px-6 py-4 sm:py-5 md:px-8 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 text-xs sm:text-sm group"
                   >
                     Read more
                     <ArrowRight className="ml-1.5 sm:ml-2 w-3 h-3 sm:w-4 h-4 group-hover:translate-x-1 transition-transform" />
@@ -156,7 +156,7 @@ const Index = ({ onApplyClick }: IndexProps) => {
                 A Legacy of <span className="text-primary">Excellence</span> Since 2005
               </h2>
               <p className="text-muted-foreground leading-relaxed">
-                Central public english high school and junior college stand as a beacon of educational excellence, where tradition meets innovation. Our holistic approach nurtures not just academic brilliance but also character, creativity, and compassion.
+                Central Public English High School And Junior College stand as a beacon of educational excellence, where tradition meets innovation. Our holistic approach nurtures not just academic brilliance but also character, creativity, and compassion.
               </p>
               <div className="grid grid-cols-2 gap-4 pt-4">
                 {[
