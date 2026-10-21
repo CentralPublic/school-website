@@ -18,8 +18,6 @@ export const Footer = () => {
               Nurturing young minds since 2005. We believe in holistic education that shapes future leaders.
             </p>
             <div className="flex gap-3">
-              
-              
               <a
                 href="https://www.instagram.com/official_cpehs"
                 target="_blank"
@@ -29,7 +27,15 @@ export const Footer = () => {
               >
                 <Instagram className="w-4 h-4" />
               </a>
-              
+              <a
+                href="https://www.youtube.com/channel/UCRISREBFaSVQXH0RlBeAhWQ"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-9 h-9 bg-primary-foreground/10 rounded-full flex items-center justify-center hover:bg-secondary hover:text-secondary-foreground transition-colors"
+                aria-label="Visit Central Public High School Mumbra on YouTube"
+              >
+                <Youtube className="w-4 h-4" />
+              </a>
             </div>
           </div>
 
