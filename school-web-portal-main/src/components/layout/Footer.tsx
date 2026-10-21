@@ -20,7 +20,13 @@ export const Footer = () => {
             <div className="flex gap-3">
               
               
-              <a href="https://www.instagram.com/official_cpehs" className="w-9 h-9 bg-primary-foreground/10 rounded-full flex items-center justify-center hover:bg-secondary hover:text-secondary-foreground transition-colors">
+              <a
+                href="https://www.instagram.com/official_cpehs"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-9 h-9 bg-primary-foreground/10 rounded-full flex items-center justify-center hover:bg-secondary hover:text-secondary-foreground transition-colors"
+                aria-label="Follow us on Instagram"
+              >
                 <Instagram className="w-4 h-4" />
               </a>
               
@@ -51,18 +57,18 @@ export const Footer = () => {
               <li className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-secondary flex-shrink-0 mt-0.5" />
                 <span className="text-primary-foreground/80 text-sm">
-                  Central public english high school and junior college, kismat colony road kausa, mumbra, Dist.Thane
+                  Central Public English High School And Junior College, Kismat Colony Road Kausa, Mumbra, Dist. Thane
                 </span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-secondary flex-shrink-0" />
-                <a href="tel:+1234567890" className="text-primary-foreground/80 hover:text-secondary transition-colors text-sm">
+                <a href="tel:+919324604661" className="text-primary-foreground/80 hover:text-secondary transition-colors text-sm">
                   +91 9324604661
                 </a>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-secondary flex-shrink-0" />
-                <a href="mailto:info@springfield.edu" className="text-primary-foreground/80 hover:text-secondary transition-colors text-sm">
+                <a href="mailto:centralpublicpri27211402315@gmail.com" className="text-primary-foreground/80 hover:text-secondary transition-colors text-sm">
                   centralpublicpri27211402315@gmail.com
                 </a>
               </li>
@@ -92,7 +98,7 @@ export const Footer = () => {
         {/* Bottom Bar */}
         <div className="mt-12 pt-8 border-t border-primary-foreground/20 text-center">
           <p className="text-primary-foreground/60 text-sm">
-            © {new Date().getFullYear()} Central Public High School. All rights reserved.
+            Copyright 2026 All Rights Reserved by Central Public English High School
           </p>
         </div>
       </div>
