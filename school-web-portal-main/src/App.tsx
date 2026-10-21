@@ -1,9 +1,9 @@
-import { lazy, Suspense, useState } from "react";
+import { lazy, Suspense, useState, useEffect } from "react";
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import { Navbar } from "@/components/layout/Navbar";
 import { Layout } from "@/components/layout/Layout";
 import { ContactDialog } from "@/components/ContactDialog";
@@ -25,6 +25,23 @@ const PageLoader = () => (
   </div>
 );
 
+const PageTitleUpdater = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    const titles: Record<string, string> = {
+      "/": "Central Public School & Junior College | Mumbra, Thane",
+      "/about": "About Us | Central Public English High School & Junior College - Mumbra",
+      "/testimonials": "Testimonials | Central Public English High School - Mumbra",
+      "/toppers": "Our Star Performers | Central Public High School Mumbra",
+      "/contact": "Contact Us | Central Public School & Junior College, Mumbra, Thane",
+    };
+    document.title = titles[location.pathname] || "Central Public School & Junior College | Mumbra, Thane";
+  }, [location.pathname]);
+
+  return null;
+};
+
 const queryClient = new QueryClient();
 
 const AppContent = () => {
@@ -32,6 +49,7 @@ const AppContent = () => {
 
   return (
     <div className="min-h-screen flex flex-col">
+      <PageTitleUpdater />
       <ScrollToTop />
       <Navbar />
       <Suspense fallback={<PageLoader />}>
