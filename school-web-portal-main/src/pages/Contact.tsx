@@ -13,7 +13,7 @@ const contactInfo = [
   {
     icon: MapPin,
     title: "Address",
-    content: "Central public english high school and junior college, kismat colony road kausa, mumbra, Dist.Thane",
+    content: "Central Public English High School And Junior College, Kismat Colony Road Kausa, Mumbra, Dist. Thane",
     link: "https://maps.app.goo.gl/cj8smMHKSxG6L8439",
   },
   {
@@ -149,8 +149,7 @@ const Contact = () => {
                   Central Public English High School
                 </h3>
                 <p className="text-muted-foreground mb-4">
-                  Central public english high school and junior college, kismat colony road kausa, mumbra, Dist.Thane
-
+                  Central Public English High School And Junior College, Kismat Colony Road Kausa, Mumbra, Dist. Thane
                 </p>
                 <Button asChild>
                   <a
