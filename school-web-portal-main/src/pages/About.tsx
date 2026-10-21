@@ -2,7 +2,7 @@ import { SectionHeading } from "@/components/SectionHeading";
 import { Card, CardContent } from "@/components/ui/card";
 import { AnimatedCounter } from "@/components/AnimatedCounter";
 import { Target, Eye, Heart, Award, Users, Clock } from "lucide-react";
-import principalImg from "@/exhibition_images/e5.jpeg";
+import principalImg from "@/p_img.jpg";
 
 const values = [
   {
@@ -221,8 +221,8 @@ const About = () => {
         
         <img
           src={principalImg}
-          alt="Principal"
-          className="w-24 h-24 rounded-full mx-auto mb-4 object-cover border-4 border-secondary"
+          alt="Mrs. Farhana Dilshad Shaikh - Principal"
+          className="w-28 h-28 rounded-full mx-auto mb-4 object-cover object-[54%_38%] border-4 border-secondary shadow-md"
         />
 
         <h3 className="text-xl font-bold text-primary-foreground mb-1">
@@ -238,7 +238,7 @@ const About = () => {
 
       {/* Vice Principal (UNCHANGED) */}
       <div className="bg-primary-foreground/10 rounded-2xl p-8 text-center animate-fade-in border border-primary-foreground/20 hover:bg-primary-foreground/15 transition-colors duration-300" style={{ animationDelay: "0.15s" }}>
-        <div className="w-24 h-24 bg-secondary rounded-full mx-auto mb-4 flex items-center justify-center">
+        <div className="w-28 h-28 bg-secondary rounded-full mx-auto mb-4 flex items-center justify-center shadow-md">
           <span className="text-2xl font-bold text-secondary-foreground">LA</span>
         </div>
         <h3 className="text-xl font-bold text-primary-foreground mb-1">
@@ -254,7 +254,7 @@ const About = () => {
 
       {/* NEW Supervisor (same design, nothing else touched) */}
       <div className="bg-primary-foreground/10 rounded-2xl p-8 text-center animate-fade-in border border-primary-foreground/20 hover:bg-primary-foreground/15 transition-colors duration-300" style={{ animationDelay: "0.3s" }}>
-        <div className="w-24 h-24 bg-secondary rounded-full mx-auto mb-4 flex items-center justify-center">
+        <div className="w-28 h-28 bg-secondary rounded-full mx-auto mb-4 flex items-center justify-center shadow-md">
           <span className="text-2xl font-bold text-secondary-foreground">S</span>
         </div>
         <h3 className="text-xl font-bold text-primary-foreground mb-1">
