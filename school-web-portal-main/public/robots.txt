@@ -1,4 +1,5 @@
+
 User-agent: *
 Allow: /
 
-Sitemap: https://centralpublicschool.in/sitemap.xml
+Sitemap: https://www.centralpublicenglishschool.com/sitemap.xml
